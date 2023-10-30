@@ -1,0 +1,68 @@
+body {
+    background-image: url('');
+    background-size: cover;
+}
+
+.header{
+    background-color:rgb(56, 172, 205);
+    flex-wrap: wrap;
+}
+.card{
+
+    margin-top: 100px;
+    box-shadow: 3px 5px 6px rgba(114, 192, 145, 0.6)    ;
+
+}
+
+.text-center{
+    color: white;
+    margin: 0px 0px 8px;
+}
+
+.pass {
+    color: rgb(208, 204, 204);
+    font: 16px;
+    text-decoration: none;
+}
+
+.login{
+    margin: 20px;
+}
+
+body{
+    background-size: cover;
+}
+
+body img{
+    height: 100px;
+}
+
+.btn-login{
+
+    border-radius: 12px;
+    border:none;
+    background-color: rgb(67, 201, 194);
+    color: white;
+    height: 40px;
+    width: 185px;
+
+
+}
+
+.form-control{
+    border: none;
+    border-bottom: 0.5px solid rgb(67, 201, 194);
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+}
+
+.image-container {
+    text-align: center; /* Alinea la imagen al centro horizontalmente */
+    margin-top: 570px; /* Agrega un espacio superior para separar la imagen del contenido */
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
