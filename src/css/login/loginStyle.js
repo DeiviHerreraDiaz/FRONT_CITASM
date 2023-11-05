@@ -1,3 +1,8 @@
+import {css} from 'lit-element'
+
+
+export default css`
+
 .header{
     background-color:rgb(56, 172, 205);
     flex-wrap: wrap;
@@ -146,3 +151,6 @@ body img{
     color: white;
 
 }
+
+
+`
