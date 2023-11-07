@@ -2,7 +2,7 @@
   "name": "citasm",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "form.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lit-element": "^4.0.1"
+    "@fullcalendar/core": "^6.1.9",
+    "@fullcalendar/daygrid": "^6.1.9",
+    "@fullcalendar/web-component": "^6.1.9",
+    "lit-element": "^3.3.3",
+    "polymer-cli": "^1.9.11"
   }
 }
