@@ -36,10 +36,7 @@ body{
     display: none;
 }
 
-.header{
-background-color:rgb(56, 172, 205);
-flex-wrap: wrap;
-}
+
 .card{
 
 margin-top: 100px;
