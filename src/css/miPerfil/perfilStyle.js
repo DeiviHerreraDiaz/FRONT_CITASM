@@ -3,6 +3,7 @@ import {css} from 'lit-element'
 
 export default css`
 
+<<<<<<< HEAD
 .navbar-brand{
     font-size: 30px !important;
     margin-left: 10px;
@@ -19,6 +20,8 @@ export default css`
     color: white;
 }
 
+=======
+>>>>>>> 1cc4a29d5a6867a29b5a127f06e7646b0c522036
 
 .btn{
     margin-left: 32.5%;

@@ -12,10 +12,13 @@ body{
     display: flex;
 }
 
+<<<<<<< HEAD
 .header {
     background-color: rgb(56, 172, 205);
 }
 
+=======
+>>>>>>> 1cc4a29d5a6867a29b5a127f06e7646b0c522036
 .form-tab {
     cursor: pointer;
     padding: 10px 20px;

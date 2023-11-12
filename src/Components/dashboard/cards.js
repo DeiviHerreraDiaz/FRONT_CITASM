@@ -33,7 +33,11 @@ export class CardsDashboard extends LitElement {
                 </div>
             </div>
             <div class="col">
+<<<<<<< HEAD
             <img src="/src/img/Doctora.png" alt="imagen doctora" class="img-doc" style="width:500px; margin-right:80px">
+=======
+            <img src="http://[::1]:8081/src/img/Doctora.png" alt="imagen doctora" class="img-doc">
+>>>>>>> 1cc4a29d5a6867a29b5a127f06e7646b0c522036
             </div>
         </div>
     </div>
