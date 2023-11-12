@@ -23,11 +23,7 @@ export class Header extends LitElement {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav menu-h" >
                     <li class="nav-item active">
-<<<<<<< HEAD
                     <a class="nav-link" href="../../index.html">Volver<span class="sr-only"></span></a>
-=======
-                        <a class="nav-link" href="menu.html">Volver<span class="sr-only"></span></a>
->>>>>>> 1cc4a29d5a6867a29b5a127f06e7646b0c522036
                     </li>
                 </ul>
             </div>
