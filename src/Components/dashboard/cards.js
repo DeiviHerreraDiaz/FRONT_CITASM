@@ -20,10 +20,10 @@ export class CardsDashboard extends LitElement {
                     <div class="card-body">
                       <h5 class="card-title">Agendar cita</h5>
                       <p class="card-text">Le brindamos el apoyo en cuanto a las necesidades de salud y enfermedad etc.</p>
-                      <a href="#" class="btn btn-primary">Ir a agendar cita</a>
+                      <a href="../../../views/hostipitales.html" class="btn btn-primary">Ir a agendar cita</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;"    >
                     <img src="https://www.atenciondellamadas.net/wp-content/uploads/2019/10/gestion-citas-medicas.svg" class="card-img-top" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Administrar cita</h5>
