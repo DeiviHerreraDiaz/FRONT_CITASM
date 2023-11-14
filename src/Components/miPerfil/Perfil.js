@@ -1,7 +1,12 @@
 import { LitElement, html } from 'lit-element';
 import styleScc from '../../css/miPerfil/perfilStyle'
 
+
+    let persona = JSON.parse(localStorage.getItem(["login_success"]));
+    console.log(persona);
+
 export class Perfil extends LitElement {
+    
 
     static get styles() {
         return [styleScc]
@@ -22,16 +27,16 @@ export class Perfil extends LitElement {
             <div class="col-sm-4 col2">
                 <form>
                     <div class="form-group">
-                    <input type="varchar" class="form-control" placeholder="Nombre">
+                    <input type="varchar" class="form-control" placeholder="Nombre" value="${persona.nombres}">
                     <button class="btn btn-primary">editar</button>
                     </div><br>
                     <div class="form-group">
-                    <input type="varchar" class="form-control" placeholder="Apellido">
+                    <input type="varchar" class="form-control" placeholder="Apellido" value="${persona.apellidos}">
                     <button class="btn btn-primary">editar</button>
                     </div><br>
                     <div class="form-group">
                         <select class="form-control">
-                            <option value="">Seleccionar tipo de documento</option>
+                            <option value="">${persona.tipoDocumento}</option>
                             <option value="">T.I</option>
                             <option value="">C.C</option>
                             <option value="">C.E</option>
@@ -40,12 +45,12 @@ export class Perfil extends LitElement {
                         <button class="btn btn-primary">editar</button>
                     </div><br>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Numero de documento">
+                        <input type="number" class="form-control" placeholder="Numero de documento" value=${persona.numeroDocumento}>
                         <button class="btn btn-primary">editar</button>
                     </div><br>
                     <div class="form-group">
                         <select class="form-control">
-                            <option value="">Seleccionar genero</option>
+                            <option value="">${persona.genero}</option>
                             <option value="">Femenino</option>
                             <option value="">Masculino</option>
                             <option value="">Otro</option>
@@ -53,24 +58,24 @@ export class Perfil extends LitElement {
                         <button class="btn btn-primary">editar</button>
                     </div><br>
                     <div class="form-group">
-                        <input type="varchar" class="form-control" placeholder="Ciudad">
+                        <input type="varchar" class="form-control" placeholder="Ciudad" value=${persona.ciudad}>
                         <button class="btn btn-primary">editar</button>
                     </div><br>
                     <div class="form-group">
                         <label>Fecha de nacimiento</label>
-                        <input type="date" class="form-control">
+                        <input type="date" class="form-control" value=${persona.fechaNacimiento}>
                         <button class="btn btn-primary">editar</button>
                     </div><br>
                     <div class="form-group">
-                        <input type="number" class="form-control" placeholder="Numero de celular">
+                        <input type="number" class="form-control" placeholder="Numero de celular" value=${persona.numeroCelular}>
                         <button class="btn btn-primary">editar</button>
                     </div><br>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Correo">
+                        <input type="email" class="form-control" placeholder="Correo" value=${persona.correoElectronico}>
                         <button class="btn btn-primary">editar</button>
                     </div><br>
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Contraseña">
+                        <input type="password" class="form-control" placeholder="Nueva contraseña">
                         <button class="btn btn-primary">editar</button>
                     </div><br>
                 </form>
