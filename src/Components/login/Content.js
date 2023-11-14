@@ -6,30 +6,6 @@ export class Content extends LitElement {
     static get styles() {
         return [styleScc]
     }
-    
-    login() {
-  
-      const nombres = this.shadowRoot.querySelector('#nombres').value;
-      const contrasena = this.shadowRoot.querySelector('#contrasena').value;
-      const users = JSON.parse(localStorage.getItem("users")) || [];
-  
-      const doctor = users.find(user => user.nombres == nombres && user.contrasena == contrasena && user.rol == 1);
-      const paciente = users.find(user => user.nombres == nombres && user.contrasena == contrasena && user.rol == 2);
-
-      if (!doctor && !paciente) {
-        alert("Usuario incorrecto");
-        window.location.href = '../../../views/login.html';
-      } else if (doctor) {
-        alert(`Bienvenido Doctor ${doctor.nombres}`);
-        window.location.href = '../../views/dashboardDoctor.html';
-        localStorage.setItem('login_success', JSON.stringify(doctor));
-      } else if (paciente) {
-        alert(`Bienvenido Paciente ${paciente.nombres}`);
-        window.location.href = '../../../views/dashboard.html';
-        localStorage.setItem('login_success', JSON.stringify(paciente));
-      }
-    }
-  
 
     render() {
         return html`
@@ -78,7 +54,7 @@ export class Content extends LitElement {
                   <br>
                   
                 <div class="text-center">
-                <button id="registrarButton" class="btn-login" @click="${(e)=>this.login()}">Registrar</button>
+                <button id="registrarButton" class="btn-login" href="dashboard">Registrar</button>
                 </div>
         
                   <br>
