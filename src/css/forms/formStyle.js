@@ -12,6 +12,10 @@ body{
     display: flex;
 }
 
+.header{
+    background-color:rgb(56, 172, 205);
+}
+
 .form-tab {
     cursor: pointer;
     padding: 10px 20px;

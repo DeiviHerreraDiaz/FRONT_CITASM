@@ -7,6 +7,22 @@ export class Headerdas extends LitElement {
         return [styleScc]
     }
 
+    logout(){
+        const user = JSON.parse(localStorage.getItem('login_success')) || false
+
+    if (!user){
+
+        window.location.href = 'login.html'
+
+    }
+
+    alert("Hasta pronto")
+    localStorage.removeItem('login_success')
+
+    window.location.href = 'login.html '
+
+    }
+
     render() {
         return html`
 
@@ -25,7 +41,7 @@ export class Headerdas extends LitElement {
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" >Cuenta<span class="sr-only"></span></a>
                     <ul class="menu-v dropdown-menu" style="background-color: rgb(56, 172, 205) !important;" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="../../../index.html">Cerrar Sesion</a></li>
+                        <li><button class="dropdown-item" @click="${(e) => this.logout()}">Cerrar Sesión</button></li>
                         <li><a class="dropdown-item" href="../../../views/perfil.html">Ver Perfil</a></li>
                     </ul>
                 </li>

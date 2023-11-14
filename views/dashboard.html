@@ -11,31 +11,13 @@
     <link rel="stylesheet" href="../src/css/estilos.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: rgb(56, 172, 205) !important;">
-        <a class="navbar-brand perfil" href="#">CITAS MEDICAS S.A.S</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav menu-h" >
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" >Cuenta<span class="sr-only"></span></a>
-                    <ul class="menu-v dropdown-menu" style="background-color: rgb(56, 172, 205) !important;" aria-labelledby="navbarDropdownMenuLink">
-                        <li><button id="logout" class="dropdown-item">Cerrar Sesión</button></li>
-                        <li><a class="dropdown-item" href="../../../views/perfil.html">Ver Perfil</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <my-headerd></my-headerd>
     <br>
     <br>
     <my-cards></my-cards>
     <my-footer></my-footer>
 </body>
 
-<button id="logout">LOGOUT</button>
 <script src="../src/Components/dashboard/index.js"></script>
 
 </html>
