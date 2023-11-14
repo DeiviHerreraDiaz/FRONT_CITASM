@@ -22,27 +22,27 @@ export class formDoctor extends LitElement {
                     </div>
 
                     <div class="registro active">
-                    <form action="procesar_doctor.php" method="POST">
+                    <form id="signupForm">
                         <br>
                         <div class="input-group-prepend">
                             <span class="input-group-text">Nombres:</span>
                         </div>
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="Digite sus nombres">
+                          <input type="text" class="form-control" id="nombres" placeholder="Digite sus nombres">
                         </div>
                         <br>
                         <div class="input-group-prepend">
                             <span class="input-group-text">Apellidos:</span>
                         </div>
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="Digite sus apellidos">
+                          <input type="text" class="form-control" id="apellidos" placeholder="Digite sus apellidos">
                         </div>
                         <br>
                         <div class="input-group-prepend">
                             <span class="input-group-text">Tipo de documento:</span>
                         </div>
                         <div class="input-group mb-3">
-                          <select class="form-control">
+                          <select class="form-control" id="tipoDocumento">
                             <option value="">Seleccione su tipo de documento</option>
                             <option value="Cedula">Cedula</option>
                             <option value="Tarjeta de identidad">Tarjeta de identidad</option>
@@ -54,28 +54,28 @@ export class formDoctor extends LitElement {
                             <span class="input-group-text">Número de documento:</span>
                         </div>
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="Digite su numero de documento">
+                          <input type="text" class="form-control" id="numeroDocumento" placeholder="Digite su numero de documento">
                         </div>
                         <br>
                         <div class="input-group-prepend">
                             <span class="input-group-text">Correo electronico:</span>
                         </div>
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="Digite su correo electronico">
+                          <input type="text" class="form-control" id="correoElectronico" placeholder="Digite su correo electronico">
                         </div>
                         <br>
                         <div class="input-group-prepend">
                             <span class="input-group-text">Contraseña:</span>
                         </div>
                         <div class="input-group mb-3">
-                          <input type="password" class="form-control" placeholder="Digite su contraseña">
+                          <input type="password" class="form-control"  id="contrasena" placeholder="Digite su contraseña">
                         </div>
                         <br>
                         <div class="input-group-prepend">
                             <span class="input-group-text">Genero:</span>
                         </div>
                         <div class="input-group mb-3">
-                          <select class="form-control">
+                          <select class="form-control" id="genero">
                             <option value="">Seleccione su genero</option>
                             <option value="Cedula">Hombre</option>
                             <option value="Tarjeta de identidad">Mujer</option>
@@ -87,32 +87,32 @@ export class formDoctor extends LitElement {
                             <span class="input-group-text">Número de celular:</span>
                         </div>
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="Digite su número de celular">
+                          <input type="text" class="form-control" id="numeroCelular" placeholder="Digite su número de celular">
                         </div>
                         <br>
                         <div class="input-group-prepend">
                             <span class="input-group-text">Ciudad:</span>
                         </div>
                         <div class="input-group mb-3">
-                          <input type="text" class="form-control" placeholder="Digite su ciudad">
+                          <input type="text" class="form-control" id="ciudad" placeholder="Digite su ciudad">
                         </div>
                         <br>
                         <div class="input-group-prepend">
                             <span class="input-group-text">Certificado profesional:</span>
                         </div>
                         <div class="input-group mb-3">
-                            <input type="file" class="form-control">
+                            <input type="file" class="form-control" id="certificadoProfesional">
                         </div>
                         <br>
                         <div class="input-group-prepend">
                             <span class="input-group-text">Fecha de nacimiento</span>
                         </div>
                         <div class="input-group mb-3">
-                          <input type="date" class="form-control">
+                          <input type="date" class="form-control" id="fechaNacimiento">
                         </div>
                         <br>
                         <div class="text-center">
-                          <button type="submit" class="btn-login">Registrar</button>
+                          <button type="submit" class="btn-login" value="Ingresar">Registrar</button>
                         </div>
                         <br>
                         <br>
@@ -122,6 +122,9 @@ export class formDoctor extends LitElement {
             </div>
         </div>
         
+
+        <script src="/registrar.js"></script>
+
         `;
 
     }

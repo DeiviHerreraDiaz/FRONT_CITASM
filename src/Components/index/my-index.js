@@ -23,7 +23,7 @@ export class MyIndex extends LitElement {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav menu-h" >
                 <li class="nav-item active">
-                <a class="nav-link" href="../../../views/dashboard.html">Iniciar Sesión</a>
+                <a class="nav-link" href="../views/login.html">Iniciar Sesión</a>
                 </li>
                 <li class="nav-item active">
                 <a class="nav-link" href="../views/formDoctor.html">Registrar Doctor</a>
