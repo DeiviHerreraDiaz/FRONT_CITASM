@@ -14,8 +14,8 @@ loginform.addEventListener('submit', (e)=>{
         alert("Usuario incorrecto")
         window.location.href = '../../../views/login.html';
     } else if (doctor){
-        alert(`Bienvenido Doctorrrr ${doctor.nombres}`);
-        window.location.href = '../../../views/dashboard.html';
+        alert(`Bienvenido Doctor ${doctor.nombres}`);
+        window.location.href = '../../../views/dashboardDoctor.html';
         localStorage.setItem('login_success', JSON.stringify(doctor))
 
     } else if (paciente) {

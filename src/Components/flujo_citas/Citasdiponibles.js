@@ -10,7 +10,7 @@ class Citasdiponibles extends LitElement {
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
       <div class="container">
-          <div class="row mb-3 align-items-center">
+          <div class="row mb-2 align-items-center">
               <div class="col"></div>
               <div class="col  flex-lg-nowrap gap-3 ">
                   <div class="card card-custom mb-2">
