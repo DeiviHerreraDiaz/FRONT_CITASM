@@ -1,4 +1,4 @@
-const user = JSON.parse(localStorage.getItem('login_success')) || false
+/*const user = JSON.parse(localStorage.getItem('login_success')) || false
 
 if (!user){
 
@@ -16,3 +16,4 @@ logout.addEventListener('click', ()=>{
     window.location.href = 'login.html '
 })
 
+*/
