@@ -42,7 +42,7 @@ export class Headerdas extends LitElement {
                     <a class="nav-link dropdown-toggle" href="#" >Cuenta<span class="sr-only"></span></a>
                     <ul class="menu-v dropdown-menu" style="background-color: rgb(56, 172, 205) !important;" aria-labelledby="navbarDropdownMenuLink">
                         <li><button class="dropdown-item" @click="${(e) => this.logout()}">Cerrar Sesión</button></li>
-                        <li><a class="dropdown-item" href="../../../views/perfil.html">Ver Perfil</a></li>
+                        <li><a class="dropdown-item" href="../../../views/perfilDoctor.html">Ver Perfil</a></li>
                     </ul>
                 </li>
             </ul>

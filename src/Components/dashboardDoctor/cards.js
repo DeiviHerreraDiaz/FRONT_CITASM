@@ -18,16 +18,16 @@ export class CardsDashboardDoc extends LitElement {
                 <div class="card" style="width: 18rem;">
                     <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSILS9B32Z5e8Q1vygvV8D-cXz584VybcjI0txqXDZEGdcBm0ha" class="card-img-top" alt="">
                     <div class="card-body">
-                      <h5 class="card-title">Agendar cita</h5>
-                      <p class="card-text">Le brindamos el apoyo en cuanto a las necesidades de salud y enfermedad etc.</p>
-                      <a href="../../../views/hostipitales.html" class="btn btn-primary">Ir a agendar cita</a>
+                      <h5 class="card-title">Crear citas disponibles</h5>
+                      <p class="card-text">Crea espacios para tus citas, escoge tu horario para atender clientes.</p>
+                      <a href="../../../views/creardisponibilidad.html" class="btn btn-primary">Ir a agendar cita</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;"    >
                     <img src="https://www.atenciondellamadas.net/wp-content/uploads/2019/10/gestion-citas-medicas.svg" class="card-img-top" alt="">
                     <div class="card-body">
-                      <h5 class="card-title">Administrar cita</h5>
-                      <p class="card-text">Consulte que citas tiene pendientes o si quiere cancelarla por algún motivo en especial</p>
+                      <h5 class="card-title">Administra tus citas</h5>
+                      <p class="card-text">Consulte que citas tiene pendientes y adminstrelas</p>
                       <a href="#" class="btn btn-primary">Ir a administrar cita</a>
                     </div>
                 </div>

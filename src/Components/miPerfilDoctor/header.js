@@ -22,7 +22,7 @@ export class Perfil_Header extends LitElement {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav menu-h" >
                     <li class="nav-item active">
-                        <a class="nav-link" href="../views/dashboard.html">Volver<span class="sr-only"></span></a>
+                        <a class="nav-link" href="../views/dashboardDoctor.html">Volver<span class="sr-only"></span></a>
                     </li>
                 </ul>
             </div>
