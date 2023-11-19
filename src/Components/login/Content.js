@@ -1,6 +1,12 @@
 import { LitElement, html } from 'lit-element';
 import styleScc from '../../css/login/loginStyle'
 
+let persona = JSON.parse(localStorage.getItem(["login_success"]));
+console.log(persona);
+
+let datos = JSON.parse(localStorage.getItem("users"));
+console.log(datos);
+
 export class Content extends LitElement {
 
     static get styles() {
@@ -78,7 +84,7 @@ export class Content extends LitElement {
                   <br>
                   
                 <div class="text-center">
-                <button id="registrarButton" class="btn-login" @click="${(e)=>this.login()}">Registrar</button>
+                <button id="registrarButton" class="btn-login" @click="${(e)=>this.login()}">Iniciar sesión</button>
                 </div>
         
                   <br>

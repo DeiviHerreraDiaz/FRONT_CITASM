@@ -68,7 +68,7 @@ export class FormCliente extends LitElement {
     <div class="col-md-6">
         <div class="card">
             <div class="card-header header">
-            <center><h2 class="text" style="color:white;">Registro Cliente</h2></center>
+            <center><h2 class="text" style="color:white;">Registro Paciente</h2></center>
             </div>
 
             <div class="registro active">
@@ -94,9 +94,9 @@ export class FormCliente extends LitElement {
                 <div class="input-group mb-3">
                   <select class="form-control" id="tipoDocumento">
                     <option value="">Seleccione su tipo de documento</option>
-                    <option value="Cedula">Cedula</option>
-                    <option value="Tarjeta de identidad">Tarjeta de identidad</option>
-                    <option value="Cedula de extranjeria">Cedula de extranjeria</option>
+                    <option value="T.I">T.I</option>
+                    <option value="C.C">C.C</option>
+                    <option value="C.E">C.E</option>
                   </select>
                 </div>
                 <br>
@@ -127,8 +127,8 @@ export class FormCliente extends LitElement {
                 <div class="input-group mb-3">
                   <select class="form-control" id="genero">
                     <option value="">Seleccione su genero</option>
-                    <option value="Hombre">Hombre</option>
-                    <option value="Mujer">Mujer</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
                     <option value="Otro">Otro</option>                    
                   </select>
                 </div>

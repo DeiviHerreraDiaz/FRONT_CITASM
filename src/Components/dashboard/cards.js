@@ -1,11 +1,22 @@
 import { LitElement, html } from "lit-element";
 import styleScc from '../../css/dashboard/dashboardStyle'
 
+let persona = JSON.parse(localStorage.getItem(["login_success"]));
+console.log(persona);
+
+let datos = JSON.parse(localStorage.getItem("users"));
+console.log(datos);
+
+
 export class CardsDashboard extends LitElement {
 
+    
+    
     static get styles() {
         return [styleScc]
     }
+
+    
 
     render() {
         return html `
