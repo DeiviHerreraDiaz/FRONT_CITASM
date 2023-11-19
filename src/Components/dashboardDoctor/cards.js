@@ -28,7 +28,7 @@ export class CardsDashboardDoc extends LitElement {
                     <div class="card-body">
                       <h5 class="card-title">Administra tus citas</h5>
                       <p class="card-text">Consulte que citas tiene pendientes y adminstrelas</p>
-                      <a href="#" class="btn btn-primary">Ir a administrar cita</a>
+                      <a href="../../../views/verCitas.html" class="btn btn-primary">Ir a administrar cita</a>
                     </div>
                 </div>
             </div>

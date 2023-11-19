@@ -1,6 +1,5 @@
 // Importa el componente FormCliente
 import { FormCliente } from '../forms/FormCliente.js';
-import { FormCliente } from '../forms/FormCliente.js';
 
 // Asegúrate de que el DOM está cargado
 document.addEventListener('DOMContentLoaded', () => {
