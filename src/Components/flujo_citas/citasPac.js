@@ -4,32 +4,17 @@ import { LitElement, html } from 'lit-element';
 
 export class citasPac extends LitElement {
 
+    aplazar(){
+        alert="La cita se ha aplazado"
+    }
     
+    cancelar(){
+        alert="La cita se ha cancelado"
+    }
+
     render() {
 
-        const aplazo = document.getElementById('apl1')
-
-        aplazo.addEventListener('click', function(){
-            alert("La cita se ha aplazado")
-        });
-
-        const aplazo2 = document.getElementById('apl2')
-
-        aplazo.addEventListener('click', function(){
-            alert("La cita se ha aplazado")
-        })
-
-        const eliminar = document.getElementById('eliminarCita1')
-
-        aplazo.addEventListener('click', function(){
-            alert("La cita se ha cancelado")
-        })
-
-        const eliminar2 = document.getElementById('eliminarCita2')
-
-        aplazo.addEventListener('click', function(){
-            alert("La cita se ha cancelado")
-        })
+        
 
         return html`
         <div class="container">
@@ -50,11 +35,11 @@ export class citasPac extends LitElement {
                     </div> 
                     <div class="card-footer">   <div class="text-center">
                         
-                            <button id="apl1" type="submit"  class="btn btn-login" style="background-color: rgb(255, 255, 0)!important;">
+                            <button @click="${this.aplazar}" type="submit"  class="btn btn-login" style="background-color: rgb(255, 255, 0)!important;">
                                 <b>Aplazar cita</b>
                             </button>
                         
-                        <button id="eliminarCita1" type="submit"  class="btn btn-login" style="background-color: rgb(255, 113, 113)!important;">
+                        <button @click="${this.cancelar}" type="submit"  class="btn btn-login" style="background-color: rgb(255, 113, 113)!important;">
                           <b>Cancelar cita</b>
                       </button>
                     </div>
@@ -70,11 +55,11 @@ export class citasPac extends LitElement {
                     </div> 
                     <div class="card-footer">   <div class="text-center">
                         
-                            <button  id="apl2" type="submit"  class="btn btn-login" style="background-color: rgb(255, 255, 0)!important;">
+                            <button  @click="${this.aplazar}" type="submit"  class="btn btn-login" style="background-color: rgb(255, 255, 0)!important;">
                                 <b>Aplazar cita</b>
                             </button>
                         
-                        <button id="eliminarCita2" type="submit"  class="btn btn-login" style="background-color: rgb(255, 113, 113)!important;">
+                        <button @click="${this.cancelar}" type="submit"  class="btn btn-login" style="background-color: rgb(255, 113, 113)!important;">
                           <b>Cancelar cita</b>
                       </button>
                     </div>
