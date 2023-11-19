@@ -19,7 +19,7 @@ class MyCalendar extends LitElement {
     <div class="card text-center  col-5">
         <div class="card-header bg-primary">
        AGENTA TU CITA 
-        </div>
+        </div>  
         <div class="card-body absolute">   
          <div class="row">
         <div class="col center">

@@ -5,7 +5,7 @@ import { LitElement, html } from 'lit-element';
 export class citasPac extends LitElement {
 
     aplazar(){
-        alert="La cita se ha aplazado"
+        alert="La cita se ha aplazado para las 17:00"
     }
     
     cancelar(){
