@@ -34,7 +34,7 @@ export class citasDoc extends LitElement {
         <div class="row mb-2 align-items-center">
             <div class="col"></div>
             
-            <div class="col"></div>
+            <div class="col"> </div>
         </div>
       
         <div class="row mb-3 align-items-center">

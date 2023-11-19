@@ -27,7 +27,7 @@ export class citasPac extends LitElement {
                     <img src="/src/img/cancel.png" class="card-img-top" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Cancelar cita</h5>
-                      <p class="card-text">Elige esta opción si no puedes asistir el día previsto y necesitas que te atendamos en otro día.</p>
+                      <p class="card-text">Elige esta opción si no puedes asistir el día previsto y necesitas que te atendamos en otro día :p.</p>
                       <a href="../../../views/utlCitas.html" class="btn btn-primary">Ir a cancelar cita</a>
                     </div>
                 </div>
