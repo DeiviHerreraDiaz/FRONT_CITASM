@@ -131,6 +131,7 @@ export class MyIndex extends LitElement {
 
         `;
     }
+    
 }
 
 customElements.define('my-index', MyIndex);
