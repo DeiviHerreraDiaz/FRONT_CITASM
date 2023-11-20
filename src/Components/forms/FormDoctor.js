@@ -92,9 +92,9 @@ export class formDoctor extends LitElement {
                 <div class="input-group mb-3">
                   <select class="form-control" id="tipoDocumento">
                     <option value="">Seleccione su tipo de documento</option>
-                    <option value="Cedula">Cedula</option>
-                    <option value="Tarjeta de identidad">Tarjeta de identidad</option>
-                    <option value="Cedula de extranjeria">Cedula de extranjeria</option>
+                    <option value="T.I">T.I</option>
+                    <option value="C.C">C.C</option>
+                    <option value="C.E">C.E</option>
                   </select>
                 </div>
                 <br>
@@ -125,9 +125,9 @@ export class formDoctor extends LitElement {
                 <div class="input-group mb-3">
                   <select class="form-control" id="genero">
                     <option value="">Seleccione su genero</option>
-                    <option value="Cedula">Hombre</option>
-                    <option value="Tarjeta de identidad">Mujer</option>
-                    <option value="Cedula de extranjeria">Otro</option>
+                    <option value="Masculino">Hombre</option>
+                    <option value="Femenino">Mujer</option>
+                    <option value="Otro">Otro</option>
                   </select>
                 </div>
                 <br>

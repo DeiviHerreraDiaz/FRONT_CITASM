@@ -1,6 +1,13 @@
 import { LitElement, html } from "lit-element";
 import styleScc from '../../css/index/my-indexStyle'
 
+
+let persona = JSON.parse(localStorage.getItem(["login_success"]));
+    console.log(persona);
+
+    let datos = JSON.parse(localStorage.getItem("users"));
+    console.log(datos);
+
 export class MyIndex extends LitElement {
 
     static get styles(){
@@ -29,7 +36,7 @@ export class MyIndex extends LitElement {
                 <a class="nav-link" href="../views/formDoctor.html">Registrar Doctor</a>
                 </li>
                 <li class="nav-item active">
-                <a class="nav-link" href="../views/formCliente.html">Registrar Cliente</a>
+                <a class="nav-link" href="../views/formCliente.html">Registrar Paciente</a>
                 </li>
                 </ul>
             </div>

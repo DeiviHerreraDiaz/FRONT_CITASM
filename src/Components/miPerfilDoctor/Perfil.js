@@ -1,18 +1,15 @@
 import { LitElement, html } from 'lit-element';
 import styleScc from '../../css/miPerfil/perfilStyle'
 
-
-    let persona = JSON.parse(localStorage.getItem(["login_success"]));
+let persona = JSON.parse(localStorage.getItem(["login_success"]));
     console.log(persona);
 
     let datos = JSON.parse(localStorage.getItem("users"));
     console.log(datos);
 
-
-
+    
 export class Perfil extends LitElement {
-
-
+    
     guardarDatos() {
         
         const nombre = this.shadowRoot.querySelector('#nombre').value;
@@ -37,10 +34,10 @@ export class Perfil extends LitElement {
 
         const usuarioExistente = datos.find(user => user.numeroDocumento === persona.numeroDocumento);
         if (usuarioExistente) {
-      
+
             Object.assign(usuarioExistente, persona);
         } else {
-      
+
             datos.push(persona);
         }
 
@@ -48,9 +45,9 @@ export class Perfil extends LitElement {
 
         localStorage.setItem("login_success", JSON.stringify(persona));
 
+  
         alert('Los datos se han guardado correctamente');
     }
-    
 
     static get styles() {
         return [styleScc]
@@ -70,18 +67,21 @@ export class Perfil extends LitElement {
             </div>
             <div class="col-sm-4 col2">
                 <form>
-
+          
                 <div class="form-group">
-                <label>Número de documento </label>
-                <input type="number" class="form-control" placeholder="Numero de documento" value="${persona.numeroDocumento}" disabled=»disabled»>
-               
-                </div><br>
-
+                    <label>Número de documento </label>
+                    <input type="number" class="form-control" placeholder="Numero de documento" value="${persona.numeroDocumento}" disabled=»disabled»>
+                   
+                    </div><br>
+                    
+                
                     <div class="form-group">
                     <input type="varchar" class="form-control" id="nombre" placeholder="Nombre" value="${persona.nombres}">
+                
                     </div><br>
                     <div class="form-group">
                     <input type="varchar" class="form-control" id="apellido" placeholder="Apellido" value="${persona.apellidos}">
+                    
                     </div><br>
                     <div class="form-group">
                         <select class="form-control" id="tipoDocumento">
@@ -89,12 +89,11 @@ export class Perfil extends LitElement {
                             <option value="T.I">T.I</option>
                             <option value="C.C">C.C</option>
                             <option value="C.E">C.E</option>
-
+                            <option value="Pasaporte">Pasaporte</option>
                         </select>
-
-                        
+      
+                    
                     </div><br>
-                   
                     <div class="form-group">
                         <select class="form-control" id="genero">
                             <option value="${persona.genero}">${persona.genero}</option>
@@ -102,32 +101,29 @@ export class Perfil extends LitElement {
                             <option value="Masculino">Masculino</option>
                             <option value="Otro">Otro</option>
                         </select>
-
-                        
+                 
                     </div><br>
                     <div class="form-group">
-                        <input type="varchar"  id="ciudad" class="form-control" placeholder="Ciudad" value=${persona.ciudad}>
+                        <input type="varchar" class="form-control" id="ciudad" placeholder="Ciudad" value=${persona.ciudad}>
 
                     </div><br>
                     <div class="form-group">
                         <label>Fecha de nacimiento</label>
                         <input type="date" class="form-control" id="fechaNacimiento" value=${persona.fechaNacimiento}>
-
+             
                     </div><br>
                     <div class="form-group">
                         <input type="number" class="form-control" id="numeroCelular" placeholder="Numero de celular" value=${persona.numeroCelular}>
-
+              
                     </div><br>
                     <div class="form-group">
                         <input type="email" class="form-control" id="correoElectronico" placeholder="Correo" value=${persona.correoElectronico}>
-
+          
                     </div><br>
                     <div class="form-group">
                         <input type="password" class="form-control" id="contrasena" placeholder="Nueva contraseña" value=${persona.contrasena}>
-                        
                     </div><br>
-
-                    <button class="btn btn-primary" @click="${this.guardarDatos}">editar</button>
+                    <button class="btn btn-primary" @click="${this.guardarDatos}">Guardar</button>
                 </form>
             </div>
         </div>
